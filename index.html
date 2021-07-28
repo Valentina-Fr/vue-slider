@@ -25,9 +25,10 @@
                         v-bind:class="isActive(index)"
                         v-bind:src="image" alt="landscape">
                         <div class="dots">
-                            <div class="dot"
+                            <div class="dot cursor-pointer"
                             v-for="(image, index) in images"
                             v-bind:class="isActive(index)"
+                            v-on:click="setActive(index)"
                             ></div>
                         </div>
                     </figure>

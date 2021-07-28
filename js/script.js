@@ -24,7 +24,10 @@ const root = new Vue({
 
         forward() {
             this.currentIndex = this.currentIndex === this.images.length - 1 ? 0 : this.currentIndex + 1;
-        }
+        },
 
+        setActive(index) {
+            this.currentIndex = index;
+        }
     }
 });
