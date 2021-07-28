@@ -1,0 +1,15 @@
+.slider {
+    height: 500px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.slider img {
+    display: none;
+}
+
+.slider img.active {
+    display: inline-block;
+}
