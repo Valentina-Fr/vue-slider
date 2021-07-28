@@ -15,15 +15,20 @@
         <div class="container">
             <div class="row vh-100 align-items-center">
                 <div class="col-3 d-flex align-items-center justify-content-center">
-                    <i class="fas fa-angle-left fa-4x cursor-pointer"></i>
+                    <i class="fas fa-angle-left fa-4x cursor-pointer"
+                    v-on:click="backward()"></i>
                 </div>
                 <div class="col-6">
                     <figure class="slider d-flex align-items-center">
-                        <img class="img-fluid active" src="./img/image1.jpg" alt="landscape">
+                        <img class="img-fluid" 
+                        v-for="(image, index) in images"
+                        v-bind:class="isActive(index)"
+                        v-bind:src="image" alt="landscape">
                     </figure>
                 </div>
                 <div class="col-3 d-flex align-items-center justify-content-center">
-                    <i class="fas fa-angle-right fa-4x cursor-pointer"></i>
+                    <i class="fas fa-angle-right fa-4x cursor-pointer"
+                    v-on:click="forward()"></i>
                 </div>
             </div>
         </div>
