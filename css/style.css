@@ -13,3 +13,28 @@
 .slider img.active {
     display: inline-block;
 }
+
+figure {
+    position: relative;
+}
+
+.dots {
+    display: flex;
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.dot {
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 10px;
+}
+
+.dots .dot.active {
+    background-color: blue;
+}
